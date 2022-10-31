@@ -1,7 +1,7 @@
 // SPDX-License-Identifier:MIT
 pragma solidity ^0.8.17;
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
-
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol"; //This import is if you are running your contract on remix IDE
+//import "@openzeppelin/contracts/token/ERC20/ERC20.sol";(import if running on hardhat)
 contract myCurrency is ERC20 {
     constructor(string memory _name, string memory _symbol)
         ERC20(_name, _symbol)
